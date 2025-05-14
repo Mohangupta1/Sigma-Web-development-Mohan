@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        h1 {
+            color: aqua;
+        }
+/* The Specificity of This attribute is 1 + 10*/
+        h1.Yellow {
+            color: yellow;
+        }
+
+        .cred {
+            color: red;
+        }
+
+        .cpurple {
+            color: purple !important
+            ;
+        }
+
+        [data-x="a"] {
+            background-color: red;
+            /*Attribute selector*/
+        }
+        /* THE Specificity of THis Selector is 1 + 10 + 10 + 10 + 10 =41*/
+        a.harryclass.rohan-class[href]:hover {
+            color:blueviolet;
+        }
+        /* Four type of the Cascade algorithm which determine which color should be appellied
+        1.Effect of Position- The last one will be applied if selectors are of same type.(specificity)
+        2.Specificity- Inline Style>Id-Selector>Class or Attribute Selector> Element Selector> Universal Selector
+        3.Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS
+        4.Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type
+        Lets look into all these one by one.*/
+     
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 style="color: aqua;" class="Yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+    <!-- SPECIFICITY CALCULATION
+     Universal Selector- 0
+    Element Selector-1
+    Class Selector or Attribute Selector- 10
+    ID Selector - 100 -->
+    <!-- Inline Style- 1000*/ -->
+</body>
+
+</html>

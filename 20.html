@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transform: rotate(40deg); */
+            /* transform: rotate(0.75turn);  1turn=360 */
+            /* transform: rotateX('40deg'); */
+            transform: rotateY('40deg');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: scale(1.6);
+            /* transform: skewY(34deg); */
+            /* transform: translateX(34px) skewX(40deg) translateY(45%); */
+              
+    
+            
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+    <main>
+        
+    </main>
+</body>
+</html>
+<!--There are two types of CSS transforms they are:-
+    a. 2D Transform- This property allows the content to be restructured in ways like translate, rotate,scale or skew ,etc.As it is 2D, therefore the content is transfored into x and y dimensions.
+
+    b. 3D Transform:- WE can manipulate content using 3 axis-->

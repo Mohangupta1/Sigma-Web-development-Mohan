@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-fit and Object-Position</title>
+    <style>
+        .container{
+            height: 634px;
+            width: 654px;
+            border: 2px solid black;
+        }
+        img{
+            height: 634px;
+            width:654px ;
+            object-fit: cover;
+            /* object-fit: contain; */
+            /* object-position:bottom right; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" alt="">
+    </div>
+</body>
+</html>
